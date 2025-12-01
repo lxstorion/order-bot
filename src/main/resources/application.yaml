@@ -1,0 +1,10 @@
+spring:
+  config:
+    import: optional:file:secret.yaml
+
+  application:
+    name: order-bot
+
+telegram:
+  bot:
+    token: ${telegram.bot.token}
